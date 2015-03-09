@@ -1,43 +1,43 @@
-<!DOCTYPE html><html><head><title></title><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><link href='big.css' rel='stylesheet' type='text/css' /><script src='big.js'></script><script src='showdown.js'></script></head><body>
-use &harr; to navigate
+<!DOCTYPE html><html><head><title></title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><link href='big.css' rel='stylesheet' type='text/css' /><script src='big.js'></script><script src='showdown.js'></script></head><body>
+utiliser &harr; pour naviguer
 
 
-did you get the<br>
-#flu this year?
+avez vous eu la<br>
+#grippe cette année?
 
 
-do you know <br>
-###anyone else who did
+connaissez vous <br>
+###quelqu'un d'autre qui l'a eu
 ?
 
 
-I'm gussing<br>
-#YES
+je suppose que<br>
+#OUI
 
 
-I kept hearing how bad it was this year<br>
-and wanted to <br>
-#see 
-and 
-#compare <br>
-for myself
+j'ai entendu dire qu'elle a été terrible<br>
+cette année et j'ai voulu<br>
+#voir
+et
+#comparer <br>
+
 
 
 ![backgrounds](img/app-landing.png "background")
-[this](http://abenrob.com/Grippe-Narrative/ "Grippe-Narrative")<br>
-is what I came up with
+[ceci](http://abenrob.com/Grippe-Narrative/ "Grippe-Narrative")<br>
+est le résultat
 
 
-Whoa - that's cool!<br>
-How did I 
-#DO that?
+Super - c'est cool!<br>
+Comment ai-je 
+#FAIT cela?
 
 
 #D3
 js
 
 
-What is 
+Qu'est-ce que 
 #D3
 js?
 
@@ -47,38 +47,45 @@ ata <br>
 #d
 riven <br>
 #d
+ocuments<br>
+<BR>
+###d 
+onnées-
+###d
+irigées-
+###d
 ocuments
 
 
-##created by<br>
+##créé par<br>
 ###Mike Bostock<br>
-(NYTimes)
+(NY Times)
 
 
-but first, a little<br>
-###housekeeping
+mais pour commencer, une petite<br>
+###présentation
 
 
-my name is 
+je m'appelle 
 #Adam Roberts<br>
-and I build 
-##spatial applications<br>
-for [SpatialDev](http://www.spatialdev.com "SpatialDev")<br>
-and as a 
-##freelancer
+et je conçois des 
+##applications géographiques <br>
+pour [SpatialDev](http://www.spatialdev.com "SpatialDev")<br>
+et en 
+##freelance
 
 
-I also started the<br>
-[alpine chapter](http://maptime-alpes.com/ "Maptime-Alpes") of<br>
-[#Maptime!](http://maptime.io/ "is totally awesome")
+je suis à l'origine du <br>
+[chapitre alpin](http://maptime-alpes.com/ "Maptime-Alpes") de<br>
+[#Maptime!](http://maptime.io/ "est vraiment fantastique")
 
 
-You should tell<br>
-##more people 
-about us!!!
+vous devriez le dire<br>
+##à tout le monde <br>
+autour de vous!!!
 
 
-Back to 
+Revenons à
 #D3
 js...
 
@@ -86,189 +93,189 @@ js...
 #Documents
 
 
-SVGs are 
-##human readable,<br>
-which works well for us because<br>
-###we aren't computers
+Les SVG sont 
+##compréhensibles,<br>
+ce qui est parfait<br>
+###nous ne sommes pas des ordinateurs
 
 
-![circles](img/3simpleCircles.png "inline")
+![cercles](img/3simpleCircles.png "en ligne")
 
 
-#Data
+#Données
 
 
 ![scatter](img/Scatterplot.png "background")
-So you can write a 
+Donc nous pouvons écrire un 
 ###simple SVG. <br>
-how about <br>
-#a scatterplot with 150 points
+mais qu'en est-il pour <br>
+#un  scatterplot nuage de 150 points
 ?<br>
-[demo](http://bl.ocks.org/mbostock/3887118 "iris scatterplot")
+[demo](http://bl.ocks.org/mbostock/3887118 "nuage d'iris")
 
 
-#Driven
+#Dirigée
 
 
-Unlike other <br>
-visualization workflows, <br>
+Contrairement aux autres <br>
+système de visualisation, <br>
 #D3
-##binds (joins)
-the data <br>
-to the actual <br>
-###document components
+##lie (associe)
+la donnée <br>
+au <br>
+###composants du document
 
 
-the 
-##circle
-we saw<br>
-###isn't just a circle<br>
-with x,y and r.<br>
-it is the 
-#data <br>
-that defined the
-##circle
+le 
+##cercle
+que nous avons vu<br>
+###n'est pas juste qu'un cercle<br>
+avec x,y et r.<br>
+il porte les 
+#données <br>
+définissant les
+##cercle 
 
 
-![circles](img/3complexCircles.png "background")
+![cercles](img/3complexCircles.png "background")
 
 
-change the 
-#data<br>
-change the 
-##circle
+changer les 
+#données<br>
+change les 
+##cercles
 
 
-so back to our 
-##app...
+revenons à notre  
+##application...
 
 
-we have our data<br>
-#####(one line for each week)
+nous avons nos données<br>
+#####(une ligne pour chaque semaine)
 
 
 ![data](img/data.png "background")
 
 
-let's look at the<br>
-###timeline
+maintenant regardons<br>
+###dans le temps
 
 
 ![timeline](img/timeline.png "background")
 
 
-we have a 
-#line, <br>
-several 
-##circles <br>
-and some 
-###text
+nous avons une 
+#ligne, <br>
+quelques 
+##cercles <br>
+et du 
+###texte
 
 
-#line<br>
+#ligne<br>
 ![line](img/line.png "inline")
 
 
-##circles<br>
+##cercles<br>
 ![line](img/circles.png "inline")
 
 
-###text<br>
+###texte<br>
 ![line](img/text.png "inline")
 
 
-did you see<br>
-where we 
-##bound 
-the 
-#data<br>
-to each 
-###component
+avez vous vu<br>
+où nous 
+##lions 
+les
+#données<br>
+à chaque
+###composant
 ?
 
 
-now for the<br>
-#map
+maintenant pour la<br>
+#carte
 
 
 ![map](img/map.png "background")
 
 
 #D3
-is going to make an<br>
-###svg polygon<br>
-for 
-##each region
+va réalise un<br>
+###polygone svg<br>
+pour 
+##chaque région
 
 
-with 
-#region name<br>
-##bound 
-to the 
+avec le 
+#nom de la région<br>
+##associé
+au 
 ###svg
 
 
-we load the 
-##data<br>
+nous chargeons les 
+##données<br>
 ![dataload](img/dataload.png "inline")
 
 
-define the 
+définissons la 
 ###projection<br>
 ![projection](img/proj.png "inline")
 
 
-and define the
-#map<br>
+et définissons la
+#carte<br>
 ![dataload](img/region.png "inline")
 
 
-on to the<br>
-##narrative/charts
+sur les<br>
+##descriptions/graphiques
 
 
 ![narrative](img/narrative.png "background")
 
 
-this part is 
-####cool <br>
-becasue we used <br>
+cette partie est
+####excellente <br>
+parce que nous utilisons  <br>
 #D3
-to add
+pour ajouter le
 ###HTML
 
 
 ![narrative code](img/narr-code.png "inline")
 
 
-also 
-####cool<br>
-because we used<br>
-the 
-#data 
-to make <br>
-##lots of charts<br>
+tout aussi 
+####excellent<br>
+nous utilisons<br>
+les 
+#données 
+pour réaliser de<br>
+##nombreux graphiques<br>
 ![week-append](img/week-append.png "inline")
 
 
-what about<br>
-the 
-#interaction?
+qu'en est-il<br>
+de  
+#interractivité?
 
 
-we use 
-#D3
-selections to<br>
-##tie 
-our <br>
-###components 
-together
+nous utilisons les sélections 
+#D3<br>
+pour<br>
+##attacher 
+nos <br>
+###composants 
+ensemble
 
 
 ![selections](img/selections.png "background")
 
 
-##Resources<br>
+##Ressources<br>
 *[D3 documentation](http://d3js.org/)<br>
 *[Jason Davies](http://www.jasondavies.com/maps/)<br>
 *[Jason Davies!](http://www.jasondavies.com/maps/transition/)<br>
@@ -281,6 +288,9 @@ together
 *[Circles demos](http://bost.ocks.org/mike/circles/)<br>
 *[Some intro text](http://maptimesea.github.io/2015/01/07/d3-mapping.html)<br>
 *[Grippe-Narrative inspiration](https://github.com/SimonbJohnson/Ebola-Narrative/)
+
+
+#Merci
 </body>
 <footer>
 <script>var converter = new Showdown.converter(); var slides = document.body.innerHTML.split("\n\n"); document.body.innerHTML = ""; for ( var i=0; i<slides.length-1; i++) { console.log(i); document.body.innerHTML += "<div>" + converter.makeHtml(slides[i]) + "</div>"; }</script>
