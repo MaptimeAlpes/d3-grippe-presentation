@@ -1,0 +1,288 @@
+<!DOCTYPE html><html><head><title></title><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><link href='big.css' rel='stylesheet' type='text/css' /><script src='big.js'></script><script src='showdown.js'></script></head><body>
+use &harr; to navigate
+
+
+did you get the<br>
+#flu this year?
+
+
+do you know <br>
+###anyone else who did
+?
+
+
+I'm gussing<br>
+#YES
+
+
+I kept hearing how bad it was this year<br>
+and wanted to <br>
+#see 
+and 
+#compare <br>
+for myself
+
+
+![backgrounds](img/app-landing.png "background")
+[this](http://abenrob.com/Grippe-Narrative/ "Grippe-Narrative")<br>
+is what I came up with
+
+
+Whoa - that's cool!<br>
+How did I 
+#DO that?
+
+
+#D3
+js
+
+
+What is 
+#D3
+js?
+
+
+#d
+ata <br>
+#d
+riven <br>
+#d
+ocuments
+
+
+##created by<br>
+###Mike Bostock<br>
+(NYTimes)
+
+
+but first, a little<br>
+###housekeeping
+
+
+my name is 
+#Adam Roberts<br>
+and I build 
+##spatial applications<br>
+for [SpatialDev](http://www.spatialdev.com "SpatialDev")<br>
+and as a 
+##freelancer
+
+
+I also started the<br>
+[alpine chapter](http://maptime-alpes.com/ "Maptime-Alpes") of<br>
+[#Maptime!](http://maptime.io/ "is totally awesome")
+
+
+You should tell<br>
+##more people 
+about us!!!
+
+
+Back to 
+#D3
+js...
+
+
+#Documents
+
+
+SVGs are 
+##human readable,<br>
+which works well for us because<br>
+###we aren't computers
+
+
+![circles](img/3simpleCircles.png "inline")
+
+
+#Data
+
+
+![scatter](img/Scatterplot.png "background")
+So you can write a 
+###simple SVG. <br>
+how about <br>
+#a scatterplot with 150 points
+?<br>
+[demo](http://bl.ocks.org/mbostock/3887118 "iris scatterplot")
+
+
+#Driven
+
+
+Unlike other <br>
+visualization workflows, <br>
+#D3
+##binds (joins)
+the data <br>
+to the actual <br>
+###document components
+
+
+the 
+##circle
+we saw<br>
+###isn't just a circle<br>
+with x,y and r.<br>
+it is the 
+#data <br>
+that defined the
+##circle
+
+
+![circles](img/3complexCircles.png "background")
+
+
+change the 
+#data<br>
+change the 
+##circle
+
+
+so back to our 
+##app...
+
+
+we have our data<br>
+#####(one line for each week)
+
+
+![data](img/data.png "background")
+
+
+let's look at the<br>
+###timeline
+
+
+![timeline](img/timeline.png "background")
+
+
+we have a 
+#line, <br>
+several 
+##circles <br>
+and some 
+###text
+
+
+#line<br>
+![line](img/line.png "inline")
+
+
+##circles<br>
+![line](img/circles.png "inline")
+
+
+###text<br>
+![line](img/text.png "inline")
+
+
+did you see<br>
+where we 
+##bound 
+the 
+#data<br>
+to each 
+###component
+?
+
+
+now for the<br>
+#map
+
+
+![map](img/map.png "background")
+
+
+#D3
+is going to make an<br>
+###svg polygon<br>
+for 
+##each region
+
+
+with 
+#region name<br>
+##bound 
+to the 
+###svg
+
+
+we load the 
+##data<br>
+![dataload](img/dataload.png "inline")
+
+
+define the 
+###projection<br>
+![projection](img/proj.png "inline")
+
+
+and define the
+#map<br>
+![dataload](img/region.png "inline")
+
+
+on to the<br>
+##narrative/charts
+
+
+![narrative](img/narrative.png "background")
+
+
+this part is 
+####cool <br>
+becasue we used <br>
+#D3
+to add
+###HTML
+
+
+![narrative code](img/narr-code.png "inline")
+
+
+also 
+####cool<br>
+because we used<br>
+the 
+#data 
+to make <br>
+##lots of charts<br>
+![week-append](img/week-append.png "inline")
+
+
+what about<br>
+the 
+#interaction?
+
+
+we use 
+#D3
+selections to<br>
+##tie 
+our <br>
+###components 
+together
+
+
+![selections](img/selections.png "background")
+
+
+##Resources<br>
+*[D3 documentation](http://d3js.org/)<br>
+*[Jason Davies](http://www.jasondavies.com/maps/)<br>
+*[Jason Davies!](http://www.jasondavies.com/maps/transition/)<br>
+*[Let's Make a Map](http://bost.ocks.org/mike/map/)<br>
+*[Americas Cup Final](http://www.nytimes.com/interactive/2013/09/25/sports/americas-cup-course.html)<br>
+*[examples](http://christopheviau.com/d3list/gallery.html)
+
+
+#Sources<br>
+*[Circles demos](http://bost.ocks.org/mike/circles/)<br>
+*[Some intro text](http://maptimesea.github.io/2015/01/07/d3-mapping.html)<br>
+*[Grippe-Narrative inspiration](https://github.com/SimonbJohnson/Ebola-Narrative/)
+</body>
+<footer>
+<script>var converter = new Showdown.converter(); var slides = document.body.innerHTML.split("\n\n"); document.body.innerHTML = ""; for ( var i=0; i<slides.length-1; i++) { console.log(i); document.body.innerHTML += "<div>" + converter.makeHtml(slides[i]) + "</div>"; }</script>
+</footer>
+</html>
